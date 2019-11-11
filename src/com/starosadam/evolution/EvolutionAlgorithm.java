@@ -21,7 +21,6 @@ public class EvolutionAlgorithm {
             population.selection();
             final Individual child = crossOver(population.fittest, population.secondFittest);
             final Individual mutatedChild = child.mutate(FUNCTION);
-            System.out.println("Mutated child " + mutatedChild);
             population.replaceWeakestElementWithMutatedChild(mutatedChild);
             System.out.println("Generation: " + i + "\n" + population);
         }

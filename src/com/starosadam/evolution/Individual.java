@@ -1,5 +1,6 @@
 package com.starosadam.evolution;
 
+import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.function.ToDoubleBiFunction;
 
@@ -71,9 +72,11 @@ class Individual {
 
     @Override
     public String toString() {
+        DecimalFormat df = new DecimalFormat("##.##");
+
         return "Individual{" +
-                "x=" + x +
-                ", z=" + z +
+                "x=" + df.format(x) +
+                ", z=" + df.format(z) +
                 '}';
     }
 }

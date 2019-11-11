@@ -13,8 +13,7 @@ class Population {
 
     Individual fittest;
     Individual secondFittest;
-
-    private List<Individual> individuals = new ArrayList<>();
+    List<Individual> individuals = new ArrayList<>();
 
     void init(ToDoubleBiFunction<Double, Double> function) {
         for (int i = 0; i < POPULATION_SIZE; i++) {
